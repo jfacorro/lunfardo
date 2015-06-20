@@ -56,6 +56,8 @@
     yascroll
     yasnippet
     yasnippet-bundle
+    cider
+    wakatime-mode
     )
   "List of packages needs to be installed at launch.")
 
