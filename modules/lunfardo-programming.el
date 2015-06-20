@@ -8,13 +8,14 @@
 (eval-after-load "flycheck"
   '(add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
 
-(eval-after-load 'flycheck
-  '(custom-set-variables
-    '(flycheck-display-errors-function #'flycheck-pos-tip-error-messages)))
+;; (eval-after-load 'flycheck
+;;   '(custom-set-variables
+;;     '(flycheck-display-errors-function #'flycheck-pos-tip-error-messages)))
 
 (defun lunfardo-prog-defaults ()
+  (wakatime-mode t)
   (rainbow-delimiters-mode t)
-  (flycheck-mode t)
+  ;;(flycheck-mode t)
   (whitespace-mode t)
   (whitespace-cleanup-mode t)
   (highlight-symbol-mode t)

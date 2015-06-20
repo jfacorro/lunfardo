@@ -2,7 +2,7 @@
                              helm-ag
                              helm-dash
                              helm-descbinds
-                             helm-flycheck
+                             ;; helm-flycheck
                              helm-projectile
                              helm-swoop))
 

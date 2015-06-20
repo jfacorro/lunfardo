@@ -6,8 +6,8 @@
 (define-key zxcv-mode-keymap (kbd "C-z")         'undo-tree-undo)
 
 (define-key zxcv-mode-keymap (kbd "C-a")         'mark-whole-buffer)
-(define-key zxcv-mode-keymap (kbd "C-M-a")       'beginning-of-line)
-(define-key zxcv-mode-keymap (kbd "C-M-e")       'end-of-visual-line)
+(define-key zxcv-mode-keymap (kbd "<C-M-left>")    'beginning-of-line)
+(define-key zxcv-mode-keymap (kbd "<C-M-right>")   'end-of-visual-line)
 
 (define-key zxcv-mode-keymap (kbd "C-o")         'ido-find-file)
 (define-key zxcv-mode-keymap (kbd "C-<tab>")     'switch-to-previous-buffer)
@@ -79,11 +79,20 @@
 (global-set-key (kbd "C-h r")                    'helm-info-emacs)
 (global-set-key (kbd "C-h C-l")                  'helm-locate-library)
 
+(defun other-window-inverse ()
+  (interactive)
+  (other-window -1))
+
 (global-set-key (kbd "C-0")                      'delete-window)
 (global-set-key (kbd "C-1")                      'delete-other-windows)
 (global-set-key (kbd "C-2")                      'split-window-horizontally)
 (global-set-key (kbd "C-3")                      'split-window-vertically)
+(global-set-key (kbd "C-4")                      'other-window)
+(global-set-key (kbd "C-5")                      'other-window-inverse)
 
 (global-set-key (kbd "<C-S-mouse-1>")            'mc/add-cursor-on-click)
+
+(global-set-key (kbd "C-q")                      'kill-emacs)
+
 
 (provide 'lunfardo-keys)
