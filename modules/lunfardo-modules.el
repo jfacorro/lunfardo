@@ -7,3 +7,4 @@
 (provide 'lunfardo-modules)
 
 (add-to-list 'auto-mode-alist '("\\.dtl\\'" . html-mode))
+(add-to-list 'auto-mode-alist '("\\.scala\\'" . scala-mode))

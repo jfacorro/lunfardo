@@ -58,6 +58,8 @@
     yasnippet-bundle
     cider
     wakatime-mode
+    elixir-mode
+    scala-mode
     )
   "List of packages needs to be installed at launch.")
 
