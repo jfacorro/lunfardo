@@ -3,8 +3,8 @@
 
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.org/packages/") t)
-(add-to-list 'package-archives
-  '("marmalade" . "http://marmalade-repo.org/packages/"))
+;;(add-to-list 'package-archives
+;;  '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
 ;; Guarantee all packages are installed on start
@@ -12,7 +12,7 @@
   '(
     ace-jump-mode
     ace-window
-    ack-and-a-half
+    ;;ack-and-a-half
     ag
     aggressive-indent
     anzu
@@ -30,17 +30,17 @@
     expand-region
     f
     flx-ido
-    gist
+    ;;gist
     git-timemachine
     github-browse-file
     highlight-symbol
     hungry-delete
     ido-vertical-mode
-    magit
-    manage-minor-mode
+    ;;magit
+    ;;manage-minor-mode
     move-text
     multiple-cursors
-    paradox
+    ;;paradox
     popwin
     powerline
     projectile
@@ -55,8 +55,8 @@
     whitespace-cleanup-mode
     yascroll
     yasnippet
-    yasnippet-bundle
-    cider
+    ;;yasnippet-bundle
+    ;;cider
     wakatime-mode
     elixir-mode
     scala-mode
