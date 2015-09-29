@@ -8,7 +8,6 @@
 (define-key zxcv-mode-keymap (kbd "C-a")         'mark-whole-buffer)
 (define-key zxcv-mode-keymap (kbd "<C-M-left>")    'beginning-of-line)
 (define-key zxcv-mode-keymap (kbd "<C-M-right>")   'end-of-visual-line)
-
 (define-key zxcv-mode-keymap (kbd "C-o")         'ido-find-file)
 (define-key zxcv-mode-keymap (kbd "C-<tab>")     'switch-to-previous-buffer)
 (define-key zxcv-mode-keymap (kbd "C-q")         'save-buffers-kill-emacs)
@@ -54,6 +53,10 @@
 (add-to-ordered-list 'emulation-mode-map-alists 'global-minor-mode-alist)
 (zxcv-mode t)
 
+;; Emacs Lisp mode
+(define-key emacs-lisp-mode-map (kbd "<C-return>") 'eval-last-sexp)
+
+;; Global
 (global-set-key [escape]                         'keyboard-escape-quit)
 (define-key mc/keymap [escape]                   'multiple-cursors-mode)
 (define-key company-mode-map [escape]            'company-abort)
@@ -93,6 +96,5 @@
 (global-set-key (kbd "<C-S-mouse-1>")            'mc/add-cursor-on-click)
 
 (global-set-key (kbd "C-q")                      'kill-emacs)
-
 
 (provide 'lunfardo-keys)
