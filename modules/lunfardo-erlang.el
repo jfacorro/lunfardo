@@ -9,7 +9,8 @@
 
 (defun lunfardo-erlang-defaults ()
   (lunfardo-prog-defaults)
-  (aggressive-indent-mode t))
+  ;;(aggressive-indent-mode t)
+  )
 
 (add-hook 'erlang-mode-hook 'lunfardo-erlang-defaults)
 

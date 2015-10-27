@@ -30,14 +30,17 @@
 
 (setq js-indent-level 2)
 (setq erlang-indent-level 2)
+(setq fci-rule-column 80)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(edts-man-root "/Users/jfacorro/.emacs.d/edts/doc/18.1")
  '(wakatime-api-key "6be7ca22-ba36-455c-a5b0-2200a11ebf5c")
  '(wakatime-cli-path "/usr/local/bin/wakatime"))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

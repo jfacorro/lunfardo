@@ -3,6 +3,7 @@
 (require 'lunfardo-elixir)
 (require 'lunfardo-ruby)
 (require 'lunfardo-js)
+(require 'lunfardo-cider)
 
 (provide 'lunfardo-modules)
 

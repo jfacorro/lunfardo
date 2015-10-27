@@ -60,6 +60,7 @@
     wakatime-mode
     elixir-mode
     scala-mode
+    fill-column-indicator
     )
   "List of packages needs to be installed at launch.")
 
