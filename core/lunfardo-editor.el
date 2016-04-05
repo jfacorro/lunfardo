@@ -10,7 +10,7 @@
 
 ;; whitespace-mode config
 (require 'whitespace)
-(setq whitespace-line-column 90) ;; limit line length
+(setq whitespace-line-column 80) ;; limit line length
 (setq whitespace-style '(face tabs empty trailing lines-tail))
 
 ;; brings visual feedback to some operations by
