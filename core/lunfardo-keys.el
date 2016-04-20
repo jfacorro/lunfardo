@@ -90,8 +90,8 @@
 (global-set-key (kbd "C-1")                      'delete-other-windows)
 (global-set-key (kbd "C-2")                      'split-window-horizontally)
 (global-set-key (kbd "C-3")                      'split-window-vertically)
-(global-set-key (kbd "C-4")                      'other-window)
-(global-set-key (kbd "C-5")                      'other-window-inverse)
+(global-set-key (kbd "C-`")                      'other-window)
+(global-set-key (kbd "C-¬")                      'other-window-inverse)
 
 (global-set-key (kbd "<C-S-mouse-1>")            'mc/add-cursor-on-click)
 
