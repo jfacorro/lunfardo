@@ -97,4 +97,16 @@
 
 (global-set-key (kbd "C-q")                      'kill-emacs)
 
+(global-set-key (kbd "C->")                      'edts-find-source-under-point)
+
+
+(global-set-key (kbd "M-S-<left>")               'shrink-window-horizontally)
+(global-set-key (kbd "M-S-<right>")              'enlarge-window-horizontally)
+
+(global-set-key (kbd "M-S-<down>")               'shrink-window)
+(global-set-key (kbd "M-S-<up>")                 'enlarge-window)
+
+(global-set-key (kbd "<C-return>")               'toggle-frame-fullscreen)
+
+
 (provide 'lunfardo-keys)
