@@ -19,7 +19,6 @@
 (require 'lunfardo-helm)
 (require 'lunfardo-yasnippet)
 (require 'lunfardo-company)
-(require 'lunfardo-evil)
 (require 'lunfardo-keys)
 (require 'lunfardo-modules)
 
