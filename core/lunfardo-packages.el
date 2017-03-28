@@ -61,6 +61,7 @@
     elixir-mode
     scala-mode
     fill-column-indicator
+    igrep ;; Simple replacement for rgrep (which doesn 't work on Mac OS X)
     )
   "List of packages needs to be installed at launch.")
 
