@@ -1,5 +1,6 @@
 (require 'lunfardo-lisp)
 (require 'lunfardo-erlang)
+(require 'lunfardo-clojure)
 (require 'lunfardo-elixir)
 (require 'lunfardo-ruby)
 (require 'lunfardo-js)
