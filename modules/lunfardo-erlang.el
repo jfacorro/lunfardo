@@ -4,6 +4,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.erl\\'" . erlang-mode))
 (add-to-list 'auto-mode-alist '("\\.app.src\\'" . erlang-mode))
+(add-to-list 'auto-mode-alist '("rebar\\.config\\'" . erlang-mode))
 
 (setq erlang-indent-level 2)
 
