@@ -55,6 +55,7 @@
     yascroll
     yasnippet
     yasnippet-bundle
+    yaml-mode
     cider
     wakatime-mode
     elixir-mode
