@@ -10,7 +10,6 @@
 ;; Guarantee all packages are installed on start
 (defvar lunfardo-packages
   '(
-    ace-jump-mode
     ace-window
     ack-and-a-half
     ag
