@@ -34,7 +34,7 @@
 
 (define-key zxcv-mode-keymap (kbd "C-S-k")       'kill-whole-line)
 
-(define-key zxcv-mode-keymap (kbd "C-/")         'evilnc-comment-or-uncomment-lines)
+(define-key zxcv-mode-keymap (kbd "C-/")         'comment-or-uncomment-region)
 (define-key zxcv-mode-keymap (kbd "<C-S-down>")  'move-text-down)
 (define-key zxcv-mode-keymap (kbd "<C-S-up>")    'move-text-up)
 (define-key zxcv-mode-keymap (kbd "C-d")         'mc/mark-next-like-this)
