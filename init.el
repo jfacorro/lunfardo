@@ -2,7 +2,7 @@
   (getenv
    (if (equal system-type 'windows-nt) "USERNAME" "USER")))
 
-(message "Lunfardo is powering up... Be patient, Master %s!" current-user)
+(message "Lunfardo is powering up... Be patient, %s!" current-user)
 
 (defvar lunfardo-dir (file-name-directory load-file-name))
 (defvar lunfardo-core-dir (expand-file-name "core" lunfardo-dir))
@@ -22,14 +22,27 @@
 (require 'lunfardo-keys)
 (require 'lunfardo-modules)
 
+;; LSP Client
+(require 'lsp-mode)
+(add-hook 'erlang-mode-hook (lambda () (lsp t)))
+(setq lsp-log-io t)
+
+;; OS X
 (when (eq system-type 'darwin)
   (require 'lunfardo-osx))
 
+;; Maximize window
 (toggle-frame-maximized)
 
+;; Indent levels
 (setq js-indent-level 2)
 (setq erlang-indent-level 2)
+
+;; Set column limit indicator to 80
 (setq fci-rule-column 80)
+
+;; Enable caching for projectile to avoid indexing every time
+(setq projectile-enable-caching t)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -38,4 +51,5 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; Enable wakatime
 (global-wakatime-mode)
