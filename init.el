@@ -26,6 +26,7 @@
 (require 'lsp-mode)
 (add-hook 'erlang-mode-hook (lambda () (lsp t)))
 (setq lsp-log-io t)
+(setq lsp-tcp-connection-timeout 1000)
 
 ;; OS X
 (when (eq system-type 'darwin)
@@ -33,6 +34,7 @@
 
 ;; Maximize window
 (toggle-frame-maximized)
+(toggle-frame-fullscreen)
 
 ;; Indent levels
 (setq js-indent-level 2)
