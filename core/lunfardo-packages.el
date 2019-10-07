@@ -54,7 +54,7 @@
     whitespace-cleanup-mode
     yascroll
     yasnippet
-    yasnippet-bundle
+    ;; yasnippet-bundle
     yaml-mode
     cider
     wakatime-mode

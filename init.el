@@ -24,7 +24,7 @@
 
 ;; LSP Client
 (require 'lsp-mode)
-(add-hook 'erlang-mode-hook (lambda () (lsp t)))
+(add-hook 'erlang-mode-hook #'lsp)
 (setq lsp-log-io t)
 (setq lsp-tcp-connection-timeout 1000)
 
