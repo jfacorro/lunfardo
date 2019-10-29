@@ -54,9 +54,6 @@
 (add-to-ordered-list 'emulation-mode-map-alists 'global-minor-mode-alist)
 (zxcv-mode t)
 
-;; Emacs Lisp mode
-(define-key emacs-lisp-mode-map (kbd "<C-return>") 'eval-last-sexp)
-
 ;; Global
 (global-set-key [escape]                         'keyboard-escape-quit)
 (define-key mc/keymap [escape]                   'multiple-cursors-mode)
@@ -68,7 +65,10 @@
 (global-set-key [remap kill-ring-save]           'easy-kill)
 
 (global-set-key (kbd "C-S-b")                    'github-browse-file)
+
+;; requires ag command installed
 (global-set-key (kbd "C-S-f")                    'helm-do-ag)
+
 (global-set-key (kbd "C-S-g")                    'helm-google-suggest)
 (global-set-key (kbd "C-S-l")                    'helm-descbinds)
 (global-set-key (kbd "C-S-i")                    'find-user-init-file)

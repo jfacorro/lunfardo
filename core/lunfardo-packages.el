@@ -17,6 +17,8 @@
     anzu
     buffer-move
     company
+    company-lsp
+    lsp-ui
     dash
     diff-hl
     discover-my-major
