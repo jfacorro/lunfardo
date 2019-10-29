@@ -11,7 +11,8 @@
       ido-auto-merge-work-directories-length -1)
 
 (ido-mode 1)
-(ido-everywhere 1)
+;; Disable id-everywhere since it conflicts with helm-mode
+;; (ido-everywhere 1)
 (ido-vertical-mode 1)
 (setq ido-vertical-define-keys 'C-n-C-p-up-and-down)
 (flx-ido-mode 1)
