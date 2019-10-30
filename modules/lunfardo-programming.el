@@ -14,13 +14,13 @@
 
 (defun lunfardo-prog-defaults ()
   (wakatime-mode t)
-  ;;(fci-mode t)
   (rainbow-delimiters-mode t)
-  ;;(flycheck-mode t)
   (whitespace-mode t)
   (whitespace-cleanup-mode t)
   (highlight-symbol-mode t)
-  (smartparens-mode t))
+  (smartparens-mode t)
+  ;; Delete all whitespace, tabs and newline
+  (setq backward-delete-char-untabify-method 'all))
 
 (add-hook 'prog-mode-hook 'lunfardo-prog-defaults)
 

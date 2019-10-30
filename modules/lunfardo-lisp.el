@@ -4,7 +4,9 @@
 
 ;; a great lisp coding hook
 (defun lunfardo-lisp-coding-defaults ()
-  (aggressive-indent-mode t))
+  (lunfardo-prog-defaults)
+  (aggressive-indent-mode t)
+  (paredit-mode t))
 
 (add-hook 'emacs-lisp-mode-hook 'lunfardo-lisp-coding-defaults)
 

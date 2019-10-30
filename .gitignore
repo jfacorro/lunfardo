@@ -24,3 +24,7 @@ elpa
 history
 ac-comphist.dat
 .mc-lists.el
+.lsp-session-v1
+ido.last
+smex-items
+network-security.data

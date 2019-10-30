@@ -72,10 +72,9 @@
 (global-set-key (kbd "C-S-g")                    'helm-google-suggest)
 (global-set-key (kbd "C-S-l")                    'helm-descbinds)
 (global-set-key (kbd "C-S-i")                    'find-user-init-file)
-(global-set-key (kbd "C-S-h")                    'anzu-query-replace)
+;; (global-set-key (kbd "C-S-h")                    'anzu-query-replace)
 (global-set-key (kbd "C-M-v")                    'helm-show-kill-ring)
 
-(global-set-key (kbd "C-S-m")                    'magit-status)
 (global-set-key (kbd "C-S-u")                    'undo-tree-visualize)
 
 (global-set-key (kbd "C-.")                      'ace-jump-word-mode)

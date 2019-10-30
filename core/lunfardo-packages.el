@@ -9,61 +9,97 @@
 
 ;; Guarantee all packages are installed on start
 (defvar lunfardo-packages
-  '(
-    ace-window
+  '(ace-window
+    ;; A frontend for ag the silver searcher
     ag
+    ;; Indent on every keytroke
     aggressive-indent
-    anzu
-    buffer-move
+
+    ;; Query and Replace
+    ;; anzu
+
+    ;; Move buffers around
+    ;; buffer-move
+
+    ;; Completion framework
     company
+
+    ;; Language Server Protocol
     company-lsp
     lsp-ui
+
+    ;; Modern list API for Emacs
     dash
+
+    ;; Highlight uncommitted changes
     diff-hl
-    discover-my-major
-    dockerfile-mode
-    drag-stuff
+
+    ;; discover-my-major
+
+    ;; Figure out spaces vs tabs
     dtrt-indent
+    ;; Nicer copy & paste
     easy-kill
-    epl
+
+    ;; Package manager
+    ;; epl
+
+    ;; Make Emacs use shell-defined values for $PATH etc in OS X
     exec-path-from-shell
+
+    ;; Increase selected region by semantic units.
     expand-region
-    f
+
+    ;; f
+
+    ;; more powerful alternative to `ido-mode''s
+    ;; built-in flex matching.
     flx-ido
-    gist
-    git-timemachine
-    github-browse-file
+
+    ;; gist
+    ;; git-timemachine
+    ;; github-browse-file
     highlight-symbol
-    hungry-delete
+
+    ;; Vertical mode
     ido-vertical-mode
-    magit
-    manage-minor-mode
+
+    ;; magit
+    ;; manage-minor-mode
+
+    ;; Move current line up and down
     move-text
+    ;; Multiple Cursors
     multiple-cursors
-    paradox
+    ;; Pop-up windows (not working AFAIK)
     popwin
+    ;; Better mode-line
     powerline
+    ;; Project handling
     projectile
-    quickrun
+    ;;
     rainbow-delimiters
-    rainbow-mode
-    restclient
+    ;; User defined parenthesis balancing
     smartparens
+    ;; M-x interface with Ido-style fuzzy matching and ranking heuristics.
     smex
+    ;; Undo tree
     undo-tree
     volatile-highlights
+    ;; Cleanup whitespace
     whitespace-cleanup-mode
+    ;; Scroll bar
     yascroll
+    ;; Snippets
     yasnippet
-    ;; yasnippet-bundle
-    yaml-mode
-    cider
+    ;; Wakatime
     wakatime-mode
+    ;; Language modes
+    dockerfile-mode
     elixir-mode
     scala-mode
-    fill-column-indicator
-    igrep ;; Simple replacement for rgrep (which doesn 't work on Mac OS X)
-    )
+    yaml-mode
+    clojure-mode)
   "List of packages needs to be installed at launch.")
 
 (defun lunfardo-packages-installed-p ()

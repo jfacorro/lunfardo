@@ -18,9 +18,6 @@
 (require 'volatile-highlights)
 (volatile-highlights-mode t)
 
-;; quickrun.el is a extension to execute editing buffer
-(require 'quickrun)
-
 ;; display specified symbols as composed characters.
 ;; Example: in Emacs Lisp mode this replaces the string
 ;; lambda with the Greek lambda character
@@ -37,11 +34,6 @@
 
 ;; bling bling, cool scroll bar
 (global-yascroll-bar-mode)
-
-;; it makes backspace and C-d erase all consecutive white space
-;; in a given direction instead of just one
-(require 'hungry-delete)
-(global-hungry-delete-mode t)
 
 ;; modular in-buffer completion framework for Emacs
 (require 'company)
@@ -66,8 +58,8 @@
 (projectile-global-mode t)
 
 ;; anzu-mode enhances isearch by showing total matches and current match position
-(require 'anzu)
-(global-anzu-mode)
+;; (require 'anzu)
+;; (global-anzu-mode)
 
 ;; represent undo-history as an actual tree (visualize with C-x u)
 (require 'undo-tree)

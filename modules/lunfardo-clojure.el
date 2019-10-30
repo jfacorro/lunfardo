@@ -8,8 +8,7 @@
 
 (defun lunfardo-clojure-defaults ()
   (lunfardo-prog-defaults)
-  (paredit-mode t)
-  )
+  (paredit-mode t))
 
 (add-hook 'clojure-mode-hook 'lunfardo-clojure-defaults)
 
