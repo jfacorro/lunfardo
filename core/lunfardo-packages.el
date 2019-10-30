@@ -11,7 +11,6 @@
 (defvar lunfardo-packages
   '(
     ace-window
-    ack-and-a-half
     ag
     aggressive-indent
     anzu

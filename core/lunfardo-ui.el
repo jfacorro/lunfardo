@@ -1,7 +1,6 @@
-(lunfardo-require-packages '(moe-theme
-                             monokai-theme
-                             zenburn-theme
-                             ))
+(lunfardo-require-packages '(monokai-theme))
+
+(require 'monokai-theme)
 
 ;; popwin is a popup window manager for Emacs
 (require 'popwin)
@@ -18,34 +17,22 @@
 
 (tool-bar-mode 0)
 (menu-bar-mode 0)
-;(scroll-bar-mode 0)
+(scroll-bar-mode 0)
 
 (setq scroll-margin 0
       scroll-step 1
       scroll-conservatively 100000
       scroll-preserve-screen-position 1)
 
-(line-number-mode t)
+(global-display-line-numbers-mode t)
 (column-number-mode t)
 
 (setq redisplay-dont-pause t)
 
-;; Confirm that (require 'powerline) must before (require 'moe-theme).
-;; Otherwise, powerline-moe-theme will not be initallized.
+;; Better mode-line
 (require 'powerline)
-(require 'moe-theme)
 
-(powerline-default-theme)
-(load-theme 'moe-dark t)
-
-(setq moe-theme-mode-line-color 'purple)
-(powerline-moe-theme)
-
-(global-linum-mode 1)
-(global-visual-line-mode 1)
-
+;; Highlight current line
 (global-hl-line-mode 1)
-
-(set-face-attribute 'linum nil :height 100)
 
 (provide 'lunfardo-ui)
