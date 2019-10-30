@@ -15,4 +15,6 @@
 
 (add-hook 'erlang-mode-hook 'lunfardo-erlang-defaults)
 
+(setq erlang-inhibit-exported-function-name-face t)
+
 (provide 'lunfardo-erlang)
