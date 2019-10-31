@@ -15,4 +15,13 @@
 
 (setq erlang-inhibit-exported-function-name-face t)
 
+(defun add-erlang-align-commas ()
+  (add-to-list 'align-rules-list
+             '(erlang-align-commas
+               (regexp . ",\\(\\s-+\\)")
+               (repeat . t)
+               (modes quote (erlang-mode)))))
+
+(add-hook 'align-load-hook 'add-erlang-align-commas)
+
 (provide 'lunfardo-erlang)
