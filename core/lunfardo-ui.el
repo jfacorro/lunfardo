@@ -1,6 +1,9 @@
 (lunfardo-require-packages '(monokai-theme))
 
 (require 'monokai-theme)
+(set-face-attribute 'region nil
+                    :background monokai-cyan
+                    :foreground monokai-background)
 
 ;; popwin is a popup window manager for Emacs
 (require 'popwin)
