@@ -41,6 +41,9 @@
     ;; Nicer copy & paste
     easy-kill
 
+    ;; Hungry-delete
+    hungry-delete
+
     ;; Package manager
     ;; epl
 

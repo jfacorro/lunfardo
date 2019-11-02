@@ -5,6 +5,9 @@
 (require 'dtrt-indent)
 (dtrt-indent-mode t)
 
+(require 'hungry-delete)
+(global-hungry-delete-mode t)
+
 ;; removes nasty bell
 (setq ring-bell-function 'ignore)
 
@@ -48,7 +51,7 @@
 (show-smartparens-global-mode t)
 
 (require 'saveplace)
-(setq-default save-place t)
+(save-place-mode 1)
 
 ;; smart tab behavior - indent or complete
 (setq tab-always-indent 'indent)
