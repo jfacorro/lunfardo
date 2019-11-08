@@ -25,6 +25,7 @@
     company
 
     ;; Language Server Protocol
+    lsp-mode
     company-lsp
     lsp-ui
 

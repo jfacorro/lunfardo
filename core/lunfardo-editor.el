@@ -147,4 +147,7 @@
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
 (setq mouse-wheel-progressive-speed nil)
 
+;; Wrap lines
+(global-visual-line-mode t)
+
 (provide 'lunfardo-editor)

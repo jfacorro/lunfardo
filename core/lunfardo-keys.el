@@ -8,6 +8,7 @@
 (define-key zxcv-mode-keymap (kbd "C-a")         'mark-whole-buffer)
 (define-key zxcv-mode-keymap (kbd "<C-M-left>")  'beginning-of-line)
 (define-key zxcv-mode-keymap (kbd "<C-M-right>") 'end-of-visual-line)
+(define-key zxcv-mode-keymap (kbd "C-p")         'helm-mini)
 (define-key zxcv-mode-keymap (kbd "C-o")         'ido-find-file)
 (define-key zxcv-mode-keymap (kbd "C-M-o")       'helm-projectile-find-file-dwim)
 (define-key zxcv-mode-keymap (kbd "C-<tab>")     'switch-to-previous-buffer)

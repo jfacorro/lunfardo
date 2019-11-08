@@ -26,4 +26,12 @@
 
 (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
 
+(setq helm-boring-buffer-regexp-list
+      (list (rx "*Flymake")
+            (rx "*helm")
+            (rx "*Completions")
+            (rx "*Messages*")
+            (rx "*scratch*")
+            (rx " *")))
+
 (provide 'lunfardo-helm)
