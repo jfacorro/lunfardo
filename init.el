@@ -22,6 +22,7 @@
 (require 'lunfardo-keys)
 (require 'lunfardo-modules)
 (require 'lunfardo-lsp)
+(require 'lunfardo-org)
 
 ;; OS X
 (when (eq system-type 'darwin)

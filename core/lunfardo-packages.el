@@ -28,6 +28,7 @@
     lsp-mode
     company-lsp
     lsp-ui
+    helm-lsp
 
     ;; Modern list API for Emacs
     dash
