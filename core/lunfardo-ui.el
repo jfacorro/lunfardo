@@ -20,7 +20,8 @@
 
 (tool-bar-mode 0)
 (menu-bar-mode 0)
-(scroll-bar-mode 0)
+(when (fboundp 'scroll-bar-mode)
+  (scroll-bar-mode 0))
 
 (setq scroll-margin 0
       scroll-step 1
