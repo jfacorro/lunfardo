@@ -29,3 +29,5 @@ ido.last
 smex-items
 network-security.data
 projectile.cache
+.emacs.desktop
+.emacs.desktop.lock

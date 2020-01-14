@@ -1,6 +1,9 @@
 (add-hook 'before-save-hook 'whitespace-cleanup)
 (add-hook 'focus-out-hook (lambda () (save-some-buffers t)))
 
+;; Re-open files from last session
+(desktop-save-mode 1)
+
 ;; auto-detecting indentation style
 (require 'dtrt-indent)
 (dtrt-indent-mode t)
