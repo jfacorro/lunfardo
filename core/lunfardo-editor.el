@@ -70,7 +70,7 @@
 ;; represent undo-history as an actual tree (visualize with C-x u)
 (require 'undo-tree)
 (setq undo-tree-mode-lighter "")
-(global-undo-tree-mode)
+(global-undo-tree-mode t)
 
 ;; allow pasting selection outside of Emacs
 (setq x-select-enable-clipboard t)
