@@ -21,7 +21,6 @@
 (require 'lunfardo-company)
 (require 'lunfardo-keys)
 (require 'lunfardo-lsp)
-(require 'lunfardo-org)
 (require 'lunfardo-modules)
 
 ;; OS X

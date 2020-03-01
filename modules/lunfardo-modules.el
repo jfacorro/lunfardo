@@ -5,6 +5,7 @@
 (require 'lunfardo-js)
 (require 'lunfardo-latex)
 (require 'lunfardo-lisp)
+(require 'lunfardo-org)
 (require 'lunfardo-ruby)
 
 (provide 'lunfardo-modules)
