@@ -1,10 +1,11 @@
-(require 'lunfardo-lisp)
-(require 'lunfardo-erlang)
-(require 'lunfardo-clojure)
-(require 'lunfardo-elixir)
-(require 'lunfardo-ruby)
-(require 'lunfardo-js)
 (require 'lunfardo-cider)
+(require 'lunfardo-clojure)
+(require 'lunfardo-erlang)
+(require 'lunfardo-elixir)
+(require 'lunfardo-js)
+(require 'lunfardo-latex)
+(require 'lunfardo-lisp)
+(require 'lunfardo-ruby)
 
 (provide 'lunfardo-modules)
 

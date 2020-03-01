@@ -20,9 +20,9 @@
 (require 'lunfardo-yasnippet)
 (require 'lunfardo-company)
 (require 'lunfardo-keys)
-(require 'lunfardo-modules)
 (require 'lunfardo-lsp)
 (require 'lunfardo-org)
+(require 'lunfardo-modules)
 
 ;; OS X
 (when (eq system-type 'darwin)
