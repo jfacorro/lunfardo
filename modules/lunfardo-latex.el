@@ -1,15 +1,16 @@
 ;; Latex
 
+;; Avoid displaying buffer when running command asynchronously
+(add-to-list 'display-buffer-alist
+             (cons "\\*Async Shell Command\\*.*" (cons #'display-buffer-no-window nil)))
+
 (defun latex->pdf ()
-  (when (eq major-mode 'latex-mode)
-    (message "Boom")))
+  (async-shell-command "make"))
 
-;; This didn't seem to work
-(add-hook 'latex-mode-hook
-          (lambda ()
-            (undo-tree-mode)
-            (add-hook 'after-save-hook 'latex->pdf nil 'local)))
+(defun latex-hook ()
+  (undo-tree-mode)
+  (add-hook 'after-save-hook 'latex->pdf nil 'local))
 
-;;(add-hook 'after-save-hook 'latex->pdf)
+(add-hook 'latex-mode-hook 'latex-hook)
 
 (provide 'lunfardo-latex)
