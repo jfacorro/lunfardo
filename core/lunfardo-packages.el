@@ -29,6 +29,7 @@
     company-lsp
     lsp-ui
     helm-lsp
+    lsp-origami
 
     ;; Modern list API for Emacs
     dash

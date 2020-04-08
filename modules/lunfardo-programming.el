@@ -20,7 +20,6 @@
   (highlight-symbol-mode t)
   (smartparens-mode t)
   (yas-minor-mode t)
-  (undo-tree-mode t)
   ;; Delete all whitespace, tabs and newline
   (setq backward-delete-char-untabify-method 'all))
 
