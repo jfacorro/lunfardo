@@ -27,7 +27,7 @@
 ;; Buffers & Files
 (define-key zxcv-mode-keymap (kbd "C-p")         'helm-mini)
 (define-key zxcv-mode-keymap (kbd "C-o")         'ido-find-file)
-(define-key zxcv-mode-keymap (kbd "C-M-o")       'helm-projectile-find-file-dwim)
+(define-key zxcv-mode-keymap (kbd "C-S-o")       'helm-projectile-find-file-dwim)
 (define-key zxcv-mode-keymap (kbd "C-<tab>")     'switch-to-previous-buffer)
 (define-key zxcv-mode-keymap (kbd "C-q")         'save-buffers-kill-emacs)
 (define-key zxcv-mode-keymap (kbd "C-n")         'generate-buffer)
@@ -36,6 +36,7 @@
 (define-key zxcv-mode-keymap (kbd "C-M-p")       'helm-projectile)
 (define-key zxcv-mode-keymap (kbd "C-s")         'save-buffer)
 (define-key zxcv-mode-keymap (kbd "C-w")         'kill-this-buffer)
+(define-key zxcv-mode-keymap (kbd "C-M-w")       'lunfardo-kill-all-buffers)
 
 ;; Keyboard Macros
 (define-key zxcv-mode-keymap (kbd "<f3>")        'kmacro-start-macro)

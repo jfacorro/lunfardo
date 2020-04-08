@@ -83,4 +83,11 @@ Repeated invocations toggle between the two most recently open buffers."
     (shell-command "git pull")
     (message "Update finished. Restart Emacs to complete the process.")))
 
+(defun lunfardo-kill-all-buffers ()
+  "Kill all open buffers"
+  (interactive)
+  (mapc 'kill-buffer
+        (delq (current-buffer)
+              (remove-if-not 'buffer-file-name (buffer-list)))))
+
 (provide 'lunfardo-core)
