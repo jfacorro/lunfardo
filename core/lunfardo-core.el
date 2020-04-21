@@ -86,6 +86,7 @@ Repeated invocations toggle between the two most recently open buffers."
 (defun lunfardo-kill-all-buffers ()
   "Kill all open buffers"
   (interactive)
+  (generate-buffer)
   (mapc 'kill-buffer
         (delq (current-buffer)
               (remove-if-not 'buffer-file-name (buffer-list)))))
